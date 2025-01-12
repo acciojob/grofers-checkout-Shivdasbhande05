@@ -15,6 +15,8 @@ const table = document.querySelector("table");
 const row = document.createElement("tr");
 
 const cell = document.createElement("td");
+
+cell.setAttribute("id", "ans");
 cell.innerHTML = "Total Value is " + sum;
 
 row.appendChild(cell);
@@ -25,6 +27,4 @@ table.appendChild(row);
 };
 
 getSumBtn.addEventListener("click", getSum);
-
-
 
